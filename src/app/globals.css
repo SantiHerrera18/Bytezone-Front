@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: sans-serif;
+}
+
+.orderButton:disabled {
+  display: none;
+}
+
+:disabled {
+  background-color: #aaa;
+  cursor: no-drop;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scroll */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e0b3ff; /* Color morado claro para el fondo del scroll */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9932cc; /* Color morado oscuro para la barra */
+  border-radius: 20px; /* Bordes más redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #62148a; /* Un morado más vibrante al hacer hover */
+}
+
+/*
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+*/
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
